@@ -22,11 +22,11 @@
 
 const projects = []
 
+
 /*------------------------ Cached Element References ------------------------*/
-const linkedInIcon = document.querySelector("#linkedIn")
-const githubLinkIcon = document.querySelector("#githubIcon")
-const emailIcon = document.querySelector("#emailIcon")
-const resumeIcon = document.querySelector("#resumeIcon")
+
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 

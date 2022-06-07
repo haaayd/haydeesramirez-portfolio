@@ -1,26 +1,51 @@
+
+@media only screen and (min-width: 768px) {
+  body {
+    /* tablet - two column display */
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px auto 30px;
+    grid-template-areas: 
+      "header header"
+      "side content"
+      "footer footer";
+  }
+}
 body {
   display: grid;
   grid-template-columns: 10% 40% 20%;
-  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-rows: min(100px, auto);
   grid-template-areas: 
   "nav nav nav"
   "aside main rside"
   "footer footer footer";
 }
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   
+  grid-column: 2;
+  grid-row: 0;
+
+
 }
-aside {
-  display: grid;
-  grid-template-columns: (3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+
+img {
+
 }
-.one {
-  grid-column: 3/3;
+.socialIcons {
+
+  grid-column: 1;
+  grid-row: 2;
+
+}
+.projects {
+  
+  grid-column: 3;
   grid-row: 3;
 }
-.two{
-  grid-column: 2;
+.skills {
+  grid-column: 1;
   grid-row: 6;
 }

@@ -25,8 +25,8 @@ const cardContainer = document.getElementById("card-container")
         <div class="card-body">
           <h5 class="card-title">${project.description}</h5>
           <p class="card-text">${project.title} </p>
-          <a href="${project.githubLink}" class="btn btn-primary">GitHub</a>
-          <a href="${project.deploymentLink}" class="btn btn-primary">Deployment</a>
+          <a href="${project.githubLink}" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="${project.deploymentLink}" target="_blank" class="btn btn-primary">Deployment</a>
         </div>
     </div>  
 

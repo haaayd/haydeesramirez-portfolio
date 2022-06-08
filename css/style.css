@@ -4,10 +4,12 @@ html {
 
 
 body {
+  background-color: #EFF6E0;
   margin: 0;
   display: grid;
+  align-items: stretch;
   min-height: 100vh;
-  grid-template-columns: 60px 80px 60px;
+  grid-template-columns:  200px 200px 200px;
   grid-template-rows: 80px auto 80px;
   column-gap: 10px;
   row-gap: 15px;
@@ -20,25 +22,32 @@ body {
   "footer footer footer";
 }
 nav {
+  background-color: bisque;
   display: flex;
   height: 10;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
+  align-items:stretch;
+  justify-content: flex-end;
+  
   grid-area: nav;
+  gap: 0 20px;
   
 }
 
+
 ul {
   list-style-type: none;
+  background-color: none;
+  
+  
 }
 .social-icons {
-  background-color: azure;
+  background-color: #AEC3B0;
+  background-size: contain;
   font-size: 150px;
   text-decoration: none;
   align-items: stretch;
-  vertical-align: ;
-  color:aquamarine;
+  color: #01161E;
   height: 100px;
   line-height: 100px;
   justify-self: stretch;
@@ -50,24 +59,31 @@ ul {
 
 }
 .social-icons:hover {
-  color: blue
+  color: #EFF6E0
 }
 
 main { 
-  background-color: blueviolet;
+  background-color: #AEC3B0;
   grid-column: 2;
   grid-row: 2/3;
 
 }
 
 main > img {
-  grid-column: 2;
-  grid-row: 2;
+  size-adjust: 50px;
+  grid-column: 1;
+  grid-row: 1;
   margin: auto;
   display: flex;
 	align-items: center;
 	justify-content: center
 }
+
+aside {
+  background-color: #AEC3B0;
+
+}
+
 
 
 

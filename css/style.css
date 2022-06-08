@@ -1,26 +1,39 @@
 html {
   box-sizing: border-box;
+  min-height: 100%;
 }
 
+@media only screen and (min-wdith 768px) {
+  body {
+    grid-template-columns: 10px 20px;
+    grid-template-rows: 30px auto 30px;
+    grid-template-areas: 
+      "nav nav"
+      "aside main"
+      "footer footer";
 
+  }
+  
+}
 body {
   background-color: #EFF6E0;
   margin: 0;
   display: grid;
   align-items: stretch;
   min-height: 100vh;
-  grid-template-columns:  200px 200px 200px;
+  grid-template-columns:  1fr 1fr 1fr;
   grid-template-rows: 80px auto 80px;
   column-gap: 10px;
   row-gap: 15px;
   justify-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: space-around;
   grid-template-areas: 
   "nav nav nav"
   "aside main rside"
   "footer footer footer";
-}
+  }
+
 nav {
   background-color: bisque;
   display: flex;
@@ -34,19 +47,25 @@ nav {
   
 }
 
-
+.list-container {
+  grid-area: aside;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  background-color: #AEC3B0;
+}
 ul {
   list-style-type: none;
   background-color: none;
   
   
+  
 }
 .social-icons {
-  background-color: #AEC3B0;
-  background-size: contain;
   font-size: 150px;
   text-decoration: none;
-  align-items: stretch;
+  align-items: center;
   color: #01161E;
   height: 100px;
   line-height: 100px;
@@ -54,6 +73,8 @@ ul {
   grid-column: 1;
   grid-row: 2/3;
   gap: 0 10px;
+  padding: 145px;
+  max-width: 70px;
   
   
 
@@ -79,11 +100,9 @@ main > img {
 	justify-content: center
 }
 
-aside {
-  background-color: #AEC3B0;
-
+#bottomb {
+  outline: 3px solid green;
 }
-
 
 
 

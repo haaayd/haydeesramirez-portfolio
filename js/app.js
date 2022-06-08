@@ -33,10 +33,5 @@ const cardContainer = document.getElementById("card-container")
     `).join('')
     cardContainer.innerHTML = projectItem
 
-   
-/*----------------------------- Event Listeners -----------------------------*/
-
-
-
-/*-------------------------------- Functions --------------------------------*/
+  
 

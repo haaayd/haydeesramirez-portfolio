@@ -12,6 +12,15 @@
 // 12.)Add google fonts + favicon things 
 // 13.) make sure it is mobile friendly reference previous lectures.
 
+const scrollUp = document.getElementById("bottomb")
+
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top:0,
+    behavior: "smooth"
+  })
+})
+
 
 import { projects } from "../data/work.js"
 
@@ -33,5 +42,7 @@ const cardContainer = document.getElementById("card-container")
     `).join('')
     cardContainer.innerHTML = projectItem
 
-  
+
+
+
 

@@ -6,14 +6,18 @@
 // Deployment Link
 
 
-const projects = [
+let projects = [
   {
   title: "Tic-Tac-Toe",
-  imgae: "",
+  image: "",
   description:"how the game works...", 
-  githubLink: "", 
-  deploymentLink: ''
+  githubLink: "https://github.com/haaayd/ttt-weekend", 
+  deploymentLink: 'https://ttt-weekend-haaayd.netlify.app/'
 
   }
 
 ]
+
+export {
+  projects
+}

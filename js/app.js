@@ -13,21 +13,27 @@
 // 13.) make sure it is mobile friendly reference previous lectures.
 
 
-
-/*-------------------------------- Constants --------------------------------*/
-
+import { projects } from "../data/work.js"
 
 
-/*-------------------------------- Variables --------------------------------*/
+const cardContainer = document.getElementById("card-container") 
 
-const projects = []
+  let projectItem = projects.map(project =>
+    `
+    <div class="card" style="width: 18rem;">
+        <img src="${project.image}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${project.description}</h5>
+          <p class="card-text">${project.title} </p>
+          <a href="${project.githubLink}" class="btn btn-primary">GitHub</a>
+          <a href="${project.deploymentLink}" class="btn btn-primary">Deployment</a>
+        </div>
+    </div>  
 
+    `).join('')
+    cardContainer.innerHTML = projectItem
 
-/*------------------------ Cached Element References ------------------------*/
-
-
-
-
+   
 /*----------------------------- Event Listeners -----------------------------*/
 
 

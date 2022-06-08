@@ -1,31 +1,13 @@
 html {
   box-sizing: border-box;
-}/* 
-@media only screen and (min-width: 768px) {
-  body {
-    /* tablet - two column display */
-    /* grid-template-columns: 1fr 2fr;
-    grid-template-rows: 50px auto 30px;
-    grid-template-areas: 
-      "header header"
-      "side content"
-      "footer footer"; */
-
-nav {
-  display: flex;
-  height: 20;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  grid-area: nav;
-  
 }
+
 
 body {
   margin: 0;
   display: grid;
   min-height: 100vh;
-  grid-template-columns: auto 80px auto;
+  grid-template-columns: 60px 80px 60px;
   grid-template-rows: 80px auto 80px;
   column-gap: 10px;
   row-gap: 15px;
@@ -37,17 +19,44 @@ body {
   "aside main rside"
   "footer footer footer";
 }
+nav {
+  display: flex;
+  height: 10;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  grid-area: nav;
+  
+}
 
-
-.socialIcons {
+ul {
+  list-style-type: none;
+}
+.social-icons {
+  background-color: azure;
   font-size: 150px;
+  text-decoration: none;
+  align-items: stretch;
+  vertical-align: ;
+  color:aquamarine;
   height: 100px;
   line-height: 100px;
-  vertical-align: middle;
   justify-self: stretch;
   grid-column: 1;
   grid-row: 2/3;
+  gap: 0 10px;
   
+  
+
+}
+.social-icons:hover {
+  color: blue
+}
+
+main { 
+  background-color: blueviolet;
+  grid-column: 2;
+  grid-row: 2/3;
 
 }
 

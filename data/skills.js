@@ -6,7 +6,7 @@ let skills = [
   },
   {
    
-    image: "",
+    image: "logo-javascript",
       
   },
   

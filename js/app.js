@@ -12,20 +12,16 @@
 // 12.)Add google fonts + favicon things 
 // 13.) make sure it is mobile friendly reference previous lectures.
 
-const scrollUp = document.getElementById("bottomb")
 
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top:0,
-    behavior: "smooth"
-  })
-})
 
 
 import { projects } from "../data/work.js"
+import { skills } from "../data/skills.js"
 
 
 const cardContainer = document.getElementById("card-container") 
+const skillsContainer = document.getElementById("skills-container")
+const scrollUp = document.getElementById("bottomb")
 
   let projectItem = projects.map(project =>
     `
@@ -43,12 +39,11 @@ const cardContainer = document.getElementById("card-container")
     cardContainer.innerHTML = projectItem
 
 
-    
-    const skillsContainer = document.getElementById("skills-container")
     let skillsItem = skills.map(skill =>
-      `<a target="_blank" href="${skill.title}">
+      `
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <ion-icon name="${skill.image}"></ion-icon>
       `
       
       
@@ -57,5 +52,11 @@ const cardContainer = document.getElementById("card-container")
 
       skillsContainer.innerHTML = skillsItem
     
+    scrollUp.addEventListener("click", () => {
+        window.scrollTo({
+          top:0,
+          behavior: "smooth"
+        })
+      })
 
 

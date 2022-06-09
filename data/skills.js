@@ -1,20 +1,24 @@
 let skills = [
   {
-    title: "HTML",
-    image: "<ion-icon name="logo-html5"></ion-icon>",
+  
+    image: "logo-html5",
     
   },
   {
-    title: "CSS",
+   
     image: "",
       
   },
   
   {
-    title: "JavaScript",
+    
     image: "",
     
   },
 
 
 ]
+
+export {
+  skills
+}

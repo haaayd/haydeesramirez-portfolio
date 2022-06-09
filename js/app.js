@@ -43,7 +43,9 @@ const scrollUp = document.getElementById("bottomb")
     `
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <ion-icon name="${skill.image}"></ion-icon>
+    <ul>
+      <li><ion-icon name="${skill.image}"></ion-icon></li>
+    </ul>
     ` 
       
     ).join("")

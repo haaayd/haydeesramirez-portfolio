@@ -17,7 +17,7 @@ let skills = [
   },
 
   {
-    image: 
+    image: "logo-python"
 
   }
 

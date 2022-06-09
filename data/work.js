@@ -14,7 +14,7 @@ let projects = [
   {
 
   title: "Place Holder",
-  image: "",
+  image: "./assets/family.vacay.png",
   description: "place holder ",
   githubLink: "..",
   deploymentLink: "..."

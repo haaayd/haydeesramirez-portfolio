@@ -49,8 +49,17 @@ nav {
   grid-area: aside;
   display: flex;
   justify-content: space-evenly;
+  align-items: column;
+  width: 75%;
+  background-color: #AEC3B0;
+}
+.skills {
+  vertical-align: auto;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   width: 75%;
+  font-size: 40px;
   background-color: #AEC3B0;
 }
 ul {

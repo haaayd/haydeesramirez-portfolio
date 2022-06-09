@@ -22,6 +22,8 @@ import { skills } from "../data/skills.js"
 const cardContainer = document.getElementById("card-container") 
 const skillsContainer = document.getElementById("skills-container")
 const scrollUp = document.getElementById("bottomb")
+const resBtn = document.getElementById("resume")
+
 
   let projectItem = projects.map(project =>
     `
@@ -60,3 +62,6 @@ const scrollUp = document.getElementById("bottomb")
       })
 
 
+      // resBtn.addEventListener("click", () => {
+      //   let res = html2pdf("resume");
+      // });

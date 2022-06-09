@@ -1,20 +1,25 @@
 let skills = [
   {
-  
-    image: "logo-html5",
-    
+
+    image: "logo-html5"
+
   },
   {
-   
-    image: "logo-javascript",
+
+    image: "logo-javascript"
       
   },
   
   {
     
-    image: "",
+    image: "logo-css3"
     
   },
+
+  {
+    image: 
+
+  }
 
 
 ]

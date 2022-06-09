@@ -28,23 +28,23 @@ let projects = [
 
   {
 
+  title: "Place Holder",
+  image: "",
+  description: "place holder ",
+  githubLink: "..",
+  deploymentLink: "..."
+  
+  },
+
+  {
+
     title: "Place Holder",
     image: "",
     description: "place holder ",
     githubLink: "..",
     deploymentLink: "..."
-  
-    },
-
-    {
-
-      title: "Place Holder",
-      image: "",
-      description: "place holder ",
-      githubLink: "..",
-      deploymentLink: "..."
     
-      }
+  }
 
 ]
 

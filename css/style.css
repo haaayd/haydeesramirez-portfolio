@@ -85,6 +85,7 @@ main {
   background-color: #AEC3B0;
   grid-column: 2;
   grid-row: 2/3;
+  padding: 100px;
 
 }
 
@@ -98,9 +99,15 @@ main > img {
 	justify-content: center
 }
 
-#bottomb {
-  outline: 3px solid green;
-  font-size: 100px;
+.buttonb {
+  border-radius: 0px;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+#buttonb {
+ display: inline-block;
+ position: relative;
 }
 
 

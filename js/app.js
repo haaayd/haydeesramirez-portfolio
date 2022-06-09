@@ -39,16 +39,14 @@ const scrollUp = document.getElementById("bottomb")
     cardContainer.innerHTML = projectItem
 
 
-    let skillsItem = skills.map(skill =>
-      `
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <ion-icon name="${skill.image}"></ion-icon>
-      `
+  let skillsItem = skills.map(skill =>
+    `
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <ion-icon name="${skill.image}"></ion-icon>
+    ` 
       
-      
-      
-      ).join('')
+    ).join("")
 
       skillsContainer.innerHTML = skillsItem
     

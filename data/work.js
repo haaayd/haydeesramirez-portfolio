@@ -4,7 +4,7 @@
 let projects = [
   {
   title: "Tic-Tac-Toe",
-  image: "",
+  image: "./assets/ttt.png",
   description:"how the game works...", 
   githubLink: "https://github.com/haaayd/ttt-weekend", 
   deploymentLink: 'https://ttt-weekend-haaayd.netlify.app/'

@@ -43,6 +43,19 @@ const cardContainer = document.getElementById("card-container")
     cardContainer.innerHTML = projectItem
 
 
+    
+    const skillsContainer = document.getElementById("skills-container")
+    let skillsItem = skills.map(skill =>
+      `<a target="_blank" href="${skill.title}">
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      `
+      
+      
+      
+      ).join('')
 
+      skillsContainer.innerHTML = skillsItem
+    
 
 

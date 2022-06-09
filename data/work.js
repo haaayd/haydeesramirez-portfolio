@@ -1,9 +1,4 @@
-//
-// Image
-// Title
-// Description
-// GitHub Link
-// Deployment Link
+
 
 
 let projects = [

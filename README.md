@@ -6,7 +6,7 @@ Allowing all users to have access to my portfolio wherever they go.
 
 <div></div>
 My Planning Board
-<a href="https://trello.com/b/qx4YJuYk/haydee-ramirez-portfolio">Planning Board.</a>
+<a href="https://trello.com/b/qx4YJuYk/haydee-ramirez-portfolio">Take a peek.</a>
 <div></div>
 <h2>Technologies Used</h2>
 <ul>
@@ -25,7 +25,7 @@ My Planning Board
   <li>MDN as a general reference</li>
 </ul>
 <div></div>
-<h2>Ice Box</h2>
+<h2>Next Steps</h2>
 <ul>
   <li>Be able to fade image and move "about me" up in place of where the image was located</li>
   <li>Have projects slide clockwise like a slideshow</li>

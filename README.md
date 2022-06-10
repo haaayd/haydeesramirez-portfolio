@@ -1,3 +1,4 @@
 ##Haydee Scarlette Ramirez Portfolio
-![alt text](href="./assets/me.png")
+
+<a href="https://hsrportfolio.netlify.app/">Navigate to my page!</a>
 

@@ -66,6 +66,9 @@ nav {
   background-color: var(--about-me);
   padding: 10%;
 }
+.skills:hover {
+  color: #EFF6E0
+}
 #card-container {
   
   display: flex;
@@ -109,9 +112,15 @@ main {
 }
 h2 {
   text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Source Serif Pro', serif;
 }
+
 p {
   text-align: justify;
+  font-size: 21px;
+
 }
 
 main > img {
@@ -125,13 +134,14 @@ main > img {
 }
 
 .buttonb {
-  border-radius: 0px;
+  border-radius: 30px;
   max-height: 50px;
   max-width: 50px;
-  display: flex;
-  position: relative;
+  display: flex-box;
+  
  
 }
+
 
 #light-dark-button {
   background-color: var(--light-dark-btn-bg);
@@ -146,18 +156,28 @@ main > img {
 
 
 @media only screen and (max-width: 1000px) {
-  /* body {
+  body {
     grid-template-columns: 1fr;
-  } */
+  }
   .list-container {
+    display: flexbox;
     background-color: transparent;
   }
   .skills {
+    display: flexbox;
+    align-items: flex-end;
     background-color: transparent;
+    size: 50%;
 
   }
   main {
     background-color: transparent;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column
+    
   }
 }
 

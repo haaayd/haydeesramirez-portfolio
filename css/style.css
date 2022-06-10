@@ -58,13 +58,13 @@ nav {
   background-color: #AEC3B0;
 }
 .skills {
-  vertical-align: auto;
-  display: column;
+  display: flexbox;
   justify-content: space-evenly;
   align-items: center;
   width: 75%;
-  font-size: 40px;
+  font-size: 150px;
   background-color: #AEC3B0;
+  padding: 10%;
 }
 #card-container {
   
@@ -86,18 +86,18 @@ ul {
   
 }
 .social-icons {
+  display: flexbox;
   font-size: 150px;
   text-decoration: none;
   align-items: center;
   color: #01161E;
-  height: 100px;
-  line-height: 100px;
-  justify-self: stretch;
-  grid-column: 1;
-  grid-row: 2/3;
-  gap: 0 10px;
-  padding: 145px;
-  max-width: 70px;
+  
+  
+  display: flexbox;
+  justify-content: space-evenly;
+  
+  width: 75%;
+  
   
   
 
@@ -130,13 +130,11 @@ main > img {
   border-radius: 0px;
   max-height: 50px;
   max-width: 50px;
+  display: flex;
+  position: relative;
+ 
 }
 
-#buttonb {
- display: flex;
- position: relative;
- grid-row: 1/4;
-}
 
 
 

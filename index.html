@@ -16,41 +16,39 @@
   <script defer src="./data/work.js" type="module"></script>
   <script defer src="./data/skills.js" type="module"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
-<body >
-  <nav class="navbar bg-light">
-    <form class="container-fluid justify-content-start">
-      <button class="btn btn-outline-success me-2" type="button" href="#About">About Me</button>
-      <button class="btn btn-outline-success me-2" type="button">Skills</button>
-      <button class="btn btn-outline-success me-2" type="button">Portfolio</button>
-      <button id="btndl" class="btndl" type="button">Dark/Light Mode</button>
-
-    </form>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid"><a class="navbar-brand" href="#Me">Haydee S Ramirez</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+  </button>
+  <button id="light-dark-button" class="btn"></button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#About">About Me</a></li>
+      <li class="nav-item"><a class="nav-link" href="#card-container">Work</a></li>
+      <li class="nav-item"><a class="nav-link" id="light-dark-button">light/darkbutton</a></li>
+    </ul>
+  </div>
+  </div>
   </nav>
   <div class="list-container">
     <ul>
       <li><a class="social-icons" href="https://github.com/haaayd" target="_blank">
-      <ion-icon name="logo-github"></ion-icon>
+      <ion-icon name="logo-github"></ion-icon></a></li>
+      <li><a class="social-icons" href="https://www.linkedin.com/in/haydee-sramirez/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>
       </a></li>
-      <li><a class="social-icons" href="https://www.linkedin.com/in/haydee-sramirez/" target="_blank">
-      <ion-icon name="logo-linkedin"></ion-icon>
-      </a></li>
-      <li><a class="social-icons" href="mailto:haydee.sramirez@gmail.com?">
-      <ion-icon name="mail-outline"></ion-icon>
-      </li><a class="social-icons" href="./assets/resume-2022.pdf" target="_blank">
-      <ion-icon name="document-text-outline"></ion-icon>
-      </a></li>
+      <li><a class="social-icons" href="mailto:haydee.sramirez@gmail.com?"><ion-icon name="mail-outline"></ion-icon></li><a class="social-icons" href="./assets/resume-2022.pdf" target="_blank"><ion-icon name="document-text-outline"></ion-icon></a>
+      </li>
     </ul>
     
   </div>
   <main>
-    <img src="./assets/headshot.me.png" alt="profile image HSR" title="¡hablo español!">
-    <h2 id="About">About Me
-    </h2>
+    <img id="Me"src="./assets/headshot.me.png" alt="profile image HSR" title="¡hablo español!">
+    <h2 id="About">About Me</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi maiores error aspernatur impedit! Numquam
       velit dignissimos repellendus animi aliquid odit natus vero nulla iste, perspiciatis iure necessitatibus dolorum
       suscipit.</p>

@@ -22,7 +22,7 @@ import { skills } from "../data/skills.js"
 const cardContainer = document.getElementById("card-container") 
 const skillsContainer = document.getElementById("skills-container")
 const scrollUp = document.getElementById("bottomb")
-const dLBtn = document.querySelector("#btndl")
+const dLBtn = document.getElementById("light-dark-button")
 const body = document.querySelector("body")
 
 
@@ -33,8 +33,8 @@ const body = document.querySelector("body")
         <div class="card-body">
           <h5 class="card-title">${project.description}</h5>
           <p class="card-text">${project.title} </p>
-          <a href="${project.githubLink}" target="_blank" class="btn btn-primary">GitHub</a>
-          <a href="${project.deploymentLink}" target="_blank" class="btn btn-primary">Deployment</a>
+          <a href="${project.githubLink}" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+          <a href="${project.deploymentLink}" target="_blank" class="btn btn-dark btn-sm">Deployment</a>
         </div>
     </div>  
 
@@ -67,3 +67,13 @@ const body = document.querySelector("body")
       function toggleLightDark () {
         body.className = body.className === "dark" ? "" : "dark"
       } 
+    function checkDarkPref() {
+      if (
+        window.matchMedia("(prefers-color-scheme:dark)").matches &&
+        body.className !== "dark"
+      ) {
+          toggleLightDark()
+      }
+      checkDarkPref()
+    }
+    

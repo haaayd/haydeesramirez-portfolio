@@ -55,15 +55,15 @@ nav {
   align-items: column;
   height: 100%;
   width: 75%;
-  background-color: var(--about-me);
+  /* background-color: var(--about-me); */
 }
 .skills {
   display: flexbox;
   justify-content:flex-start;
   align-items: center;
   width: 100%;
-  font-size: 50px;
-  background-color: var(--about-me);
+  font-size: 150px;
+  /* background-color: var(--about-me); */
   padding: 40%;
   margin: 20px;
 }
@@ -89,7 +89,7 @@ ul {
 }
 .social-icons {
   display: flexbox;
-  font-size: 50px;
+  font-size: 150px;
   text-decoration: none;
   text-align: left;
   color: #01161E;

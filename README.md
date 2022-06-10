@@ -1,2 +1,2 @@
 # haydeesramirez-portfolio
-# the following sources 
+# the following sources - favicon icons 

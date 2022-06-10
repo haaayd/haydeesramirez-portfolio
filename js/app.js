@@ -22,7 +22,8 @@ import { skills } from "../data/skills.js"
 const cardContainer = document.getElementById("card-container") 
 const skillsContainer = document.getElementById("skills-container")
 const scrollUp = document.getElementById("bottomb")
-const resBtn = document.getElementById("resume")
+const dLBtn = document.querySelector("#btndl")
+const body = document.querySelector("body")
 
 
   let projectItem = projects.map(project =>
@@ -62,6 +63,7 @@ const resBtn = document.getElementById("resume")
       })
 
 
-      // resBtn.addEventListener("click", () => {
-      //   let res = html2pdf("resume");
-      // });
+      dLBtn.addEventListener("click", toggleLightDark)
+      function toggleLightDark () {
+        body.className = body.className === "dark" ? "" : "dark"
+      } 

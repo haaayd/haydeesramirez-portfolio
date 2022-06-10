@@ -15,6 +15,9 @@ html {
   
 }
 body {
+  --body-bg: #AEC3B0;
+  --btn-text-color: color: #EFF6E0;
+  background-color: var(--body-bg);
   background-color: #EFF6E0;
   margin: 0;
   display: grid;

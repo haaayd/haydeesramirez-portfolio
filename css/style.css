@@ -59,12 +59,13 @@ nav {
 }
 .skills {
   display: flexbox;
-  justify-content: space-evenly;
+  justify-content:flex-start;
   align-items: center;
-  width: 75%;
-  font-size: 150px;
+  width: 100%;
+  font-size: 50px;
   background-color: var(--about-me);
-  padding: 10%;
+  padding: 40%;
+  margin: 20px;
 }
 .skills:hover {
   color: #EFF6E0
@@ -88,7 +89,7 @@ ul {
 }
 .social-icons {
   display: flexbox;
-  font-size: 150px;
+  font-size: 50px;
   text-decoration: none;
   text-align: left;
   color: #01161E;

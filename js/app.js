@@ -22,8 +22,10 @@ import { skills } from "../data/skills.js"
 const cardContainer = document.getElementById("card-container") 
 const skillsContainer = document.getElementById("skills-container")
 const scrollUp = document.getElementById("bottomb")
-const dLBtn = document.getElementById("light-dark-button")
+const dBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
+
+dBtn.addEventListener("click", toggleLightDark)
 
 
   let projectItem = projects.map(project =>
@@ -63,8 +65,7 @@ const body = document.querySelector("body")
       })
 
 
-      dLBtn.addEventListener("click", toggleLightDark)
-      function toggleLightDark () {
+    function toggleLightDark () {
         body.className = body.className === "dark" ? "" : "dark"
       } 
     function checkDarkPref() {
@@ -74,6 +75,7 @@ const body = document.querySelector("body")
       ) {
           toggleLightDark()
       }
-      checkDarkPref()
+      
     }
+    checkDarkPref()
     

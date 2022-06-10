@@ -15,11 +15,14 @@ html {
   
 }
 body {
-  --body-bg: #c3b9ae;
-  --btn-text-color: color: #EFF6E0;
-  
+  --body-bg: #EFF6E0;
+  --about-me: #AEC3B0;
+  --inverted-btn-text-color: #eaeaea;
+  --light-dark-btn-bg: #1d1e2b;
+  --light-dark-btn-content: "Dark Mode";
+  --btn-text-color:#2a2a2a;
+
   background-color: var(--body-bg);
-  background-color: #EFF6E0;
   margin: 0;
   display: grid;
   align-items: stretch;
@@ -37,6 +40,15 @@ body {
   "footer footer footer";
   }
 
+  body.dark {
+    --body-bg: #AEC3B0;
+    --about-me: #EFF6E0;
+    --inverted-btn-text-color: #2a2a2a;
+    --light-dark-btn-bg: white;
+    --light-dark-btn-content: "Light Mode";
+    --btn-text-color:#eaeaea;
+  }
+
 nav {
   background-color: bisque;
   display: flex;
@@ -46,7 +58,6 @@ nav {
   justify-content: flex-end;
   grid-area: nav;
   gap: 0 20px;
-  --body-bg: #AEC3B0;
   
 }
 
@@ -57,7 +68,7 @@ nav {
   align-items: column;
   height: 100%;
   width: 75%;
-  background-color: #AEC3B0;
+  background-color: var(--about-me);
 }
 .skills {
   display: flexbox;
@@ -65,7 +76,7 @@ nav {
   align-items: center;
   width: 75%;
   font-size: 150px;
-  background-color: #AEC3B0;
+  background-color: var(--about-me);
   padding: 10%;
 }
 #card-container {
@@ -113,7 +124,7 @@ ul {
 }
 
 main { 
-  background-color: #AEC3B0;
+  background-color: var(--about-me);
   grid-column: 2;
   grid-row: 2/3;
   padding: 100px;
@@ -139,7 +150,16 @@ main > img {
  
 }
 
+#light-dark-button {
+  background-color: var(--light-dark-btn-bg);
+  background-image: var(--light-dark-btn-bg);
+}
 
+#light-dark-button::after {
+  border: none;
+  color: var(--inverted-btn-text-color);
+  content: var(--light-dark-btn-content);
+}
 
 
 

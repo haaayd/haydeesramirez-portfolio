@@ -2,7 +2,7 @@
 Allowing all users to have access to my portfolio wherever they go.
 <a href="https://hsrportfolio.netlify.app/">Get to know me!</a>
 
-<img src="./assests/me.png">
+<img src="./assets/me.png"></img>
 
 <div></div>
 My Planning Board
@@ -23,6 +23,14 @@ My Planning Board
   <li>google fonts for the awesome fonts</li>
   <li>GA lecture notes and videos</li>
   <li>MDN as a general reference</li>
+</ul>
+<div></div>
+<h2>Ice Box</h2>
+<ul>
+  <li>Be able to fade image and move "about me" up in place of where the image was located</li>
+  <li>Have projects slide clockwise like a slideshow</li>
+  <li>have nav bar</li>
+  <li>be more mobile friendly</li>
 </ul>
 
 

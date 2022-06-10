@@ -5,7 +5,7 @@ let projects = [
   {
   title: "Tic-Tac-Toe",
   image: "./assets/ttt.png",
-  description:"how the game works...", 
+  description:"Get three in a row of X's or O's to win!", 
   githubLink: "https://github.com/haaayd/ttt-weekend", 
   deploymentLink: 'https://ttt-weekend-haaayd.netlify.app/'
 
@@ -14,8 +14,8 @@ let projects = [
   {
 
   title: "Place Holder",
-  image: "./assets/family.vacay.png",
-  description: "place holder ",
+  image: "/assets/clouds.png",
+  description: "This is my place holder for a future awesome project",
   githubLink: "..",
   deploymentLink: "..."
 
@@ -24,8 +24,8 @@ let projects = [
   {
 
   title: "Place Holder",
-  image: "",
-  description: "place holder ",
+  image: "./assets/clouds.png",
+  description: "This is my place holder for a future awesome project",
   githubLink: "..",
   deploymentLink: "..."
   
@@ -34,8 +34,8 @@ let projects = [
   {
 
     title: "Place Holder",
-    image: "",
-    description: "place holder ",
+    image: "./assets/clouds.png",
+    description: "This is my place holder for a future awesome project",
     githubLink: "..",
     deploymentLink: "..."
     

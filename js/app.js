@@ -55,7 +55,7 @@ dBtn.addEventListener("click", toggleLightDark)
       
     ).join("")
 
-      skillsContainer.innerHTML = skillsItem
+    skillsContainer.innerHTML = skillsItem
     
     scrollUp.addEventListener("click", () => {
         window.scrollTo({
@@ -72,8 +72,8 @@ dBtn.addEventListener("click", toggleLightDark)
       if (
         window.matchMedia("(prefers-color-scheme:dark)").matches &&
         body.className !== "dark"
-      ) {
-          toggleLightDark()
+      ){
+        toggleLightDark()
       }
       
     }

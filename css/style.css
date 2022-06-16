@@ -18,7 +18,7 @@ body {
 
 body.dark {
   --body-bg: #AEC3B0;
-  --about-me: #AEC3B0;
+  --about-me: #EFF6E0;
   --inverted-btn-text-color: #2a2a2a;
   --light-dark-btn-bg: white;
   --light-dark-btn-content: "Light Mode";
@@ -69,7 +69,8 @@ div#list-container .ul{
   color: #01161E;
   gap: 20px;
   grid-area: aside;
-  padding: 100px 100px 100px 100px;
+  align-content: left;
+  justify-content:flex-start;
 
 }
 

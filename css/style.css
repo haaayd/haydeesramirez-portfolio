@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -11,7 +12,8 @@ body {
   --btn-text-color:#2a2a2a;
 
   background-color: var(--body-bg);
-  align-items: center;
+
+
 }
 
 body.dark {
@@ -23,31 +25,84 @@ body.dark {
   --btn-text-color:#eaeaea;
 }
 
+nav{
+  justify-content: center;
+  background-color:#AEC3B0;
+  grid-column: 1/4;
+}
+
 main {
-  display: flex;
+  background-color: var(--about-me);
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-#Me { 
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px 10px;
+  margin: 100px 100px;
+  grid-area: main;
 
 }
-h2 {
-  text-align: center;
+
+#Me {
+  display: flexbox;
+  align-content: center;
+  max-width: 200px;
+  max-height: 200px;
 }
+
+
+.skills {
+  background-color: var(--about-me);
+  grid-area: rside;
+  justify-content:flex-end;
+  
+}
+.skills:hover {
+  color: #EFF6E0;
+}
+
+div#list-container .ul{
+  height: 82vh;
+  width: 75vh;
+}
+
+.social-icons {
+  color: #01161E;
+  gap: 20px;
+  grid-area: aside;
+  padding: 100px 100px 100px 100px;
+
+}
+
+.social-icons:hover {
+  color: #EFF6E0;
+}
+
+ul {
+  background-color: var(--about-me);
+  list-style: none;
+  font-size: 50px;
+  align-items: center;
+  
+}
+
 #card-container{
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 10px; 
+  grid-area: footer;
+
 }
-.skills 
-{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+.buttonb {
+  max-height: 30px;
+  max-width: 30px;
+  grid-area: inherit;
+
+}
+
+#bottomb {
+  background-color: #AEC3B0;
 }
 
 #light-dark-button {
@@ -61,53 +116,25 @@ h2 {
   content: var(--light-dark-btn-content);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   body {
-    grid-template-columns: 3fr;
-    grid-template-rows: 50px 50px;
-    grid-template-areas: 
-      "nav nav"
-      "social main "
-      "skills main";
-  }
-  nav{
-    grid-area: nav;
-    font-size: 36px;
-  }
-  ul {
-    list-style: none;
-    font-size: 100px;
-    
-  }
-  .social-icons {
-    display: flex;
-    vertical-align: middle;
-    align-self: center;
-
-  }
-
-  main { 
-    grid-area: main;
-    background-color: var(--about-me);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "aside main rside"
+    "footer footer footer";
     align-items: center;
-    grid-column: 2;
-    grid-row: 1;
+    row-gap: 15px;
+    justify-content: space-between;
+    column-gap: 10px;
+
+  
   }
 
-  #Me {
-    grid-area: social;
-    display: flex;
-    align-content: flex-start;
+  body::-webkit-scrollbar {
+    display: none;
   }
-  .buttonb {
-    border-radius: 30px;
-    max-height: 50px;
-    max-width: 50px;
-    display: flex;
-    align-items: flex-start;
-    
-   
-  }
+
 
 }

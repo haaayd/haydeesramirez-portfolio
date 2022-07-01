@@ -13,11 +13,11 @@ let projects = [
 
   {
 
-  title: "Place Holder",
-  image: "/assets/clouds.png",
-  description: "This is my place holder for a future awesome project",
-  githubLink: "..",
-  deploymentLink: "..."
+  title: "Workout Junkie",
+  image: "/assets/home.png",
+  description: "This app is for anyone who is new to the workout industry, looking to switch things up or even experiment with new workouts in their local area!",
+  githubLink: "https://github.com/haaayd/workout-junkies",
+  deploymentLink: "https://workout-junkies.herokuapp.com/"
 
   },
 

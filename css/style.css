@@ -73,13 +73,17 @@ div#list-container .ul{
   justify-content:flex-start;
 
 }
-
+.card{
+  display: flex;
+  justify-content: space-evenly;
+}
 .social-icons:hover {
   color: #EFF6E0;
 }
 
 ul {
   background-color: var(--about-me);
+  display: flex;
   list-style: none;
   font-size: 50px;
   align-items: center;

@@ -24,7 +24,7 @@ let projects = [
   {
 
   title: "Skin Care",
-  image: "./assets/fron.png",
+  image: "./assets/front.png",
   description: "a place to view all the skin care products I have tried or am still trying out. ",
   githubLink: "https://github.com/haaayd/sc-products.git",
   deploymentLink: "https://hsr-sskincare.herokuapp.com/"

@@ -30,7 +30,7 @@ My Planning Board
   <li>Be able to fade image and move "about me" up in place of where the image was located</li>
   <li>Have projects slide clockwise like a slideshow</li>
   <li>have nav bar</li>
-  <li>be more mobile friendly</li>
+  <li>be more mobile friendly!</li>
 </ul>
 
 
